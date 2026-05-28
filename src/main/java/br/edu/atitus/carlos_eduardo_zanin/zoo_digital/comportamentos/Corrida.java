@@ -1,0 +1,6 @@
+package br.edu.atitus.carlos_eduardo_zanin.zoo_digital.comportamentos;
+public interface Corrida {
+
+    void correr();
+      
+}
