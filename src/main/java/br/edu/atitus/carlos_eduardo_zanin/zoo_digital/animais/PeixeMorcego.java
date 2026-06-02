@@ -1,10 +1,10 @@
 package br.edu.atitus.carlos_eduardo_zanin.zoo_digital.animais;
 
-
-import br.edu.atitus.carlos_eduardo_zanin.zoo_digital.comportamentos.Nado;
+import br.edu.atitus.carlos_eduardo_zanin.zoo_digital.comportamentos.Predacao;
 import br.edu.atitus.carlos_eduardo_zanin.zoo_digital.especies.Peixe;
+import br.edu.atitus.carlos_eduardo_zanin.zoo_digital.comportamentos.Nado;
 
-public class PeixeMorcego extends Peixe implements Nado {
+public class PeixeMorcego extends Peixe implements Nado, Predacao {
 
     public PeixeMorcego(String nome, int idade) {
         super(nome, idade, "Salgada");
@@ -12,7 +12,7 @@ public class PeixeMorcego extends Peixe implements Nado {
 
     @Override
     public void comer() {
-        this.comer("pesquenas algas");
+        this.comer("algas");
     }
 
     @Override
@@ -22,8 +22,12 @@ public class PeixeMorcego extends Peixe implements Nado {
 
     @Override
     public void nadar() {
-        IO.println(getNome() + " está nadando tranquilamente");
+        IO.println(getNome() + " está nadando");
     }
-    
-    
+
+    @Override
+    public void cacar() {
+        IO.println(this.getNome() + " está caçando crustáceos");
+    }
+
 }

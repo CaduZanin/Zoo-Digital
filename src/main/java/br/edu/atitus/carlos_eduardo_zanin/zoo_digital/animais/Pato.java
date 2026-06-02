@@ -1,6 +1,5 @@
 package br.edu.atitus.carlos_eduardo_zanin.zoo_digital.animais;
 
-
 import br.edu.atitus.carlos_eduardo_zanin.zoo_digital.comportamentos.Corrida;
 import br.edu.atitus.carlos_eduardo_zanin.zoo_digital.comportamentos.Nado;
 import br.edu.atitus.carlos_eduardo_zanin.zoo_digital.comportamentos.Voo;
@@ -14,29 +13,29 @@ public class Pato extends Ave implements Corrida, Nado, Voo {
 
     @Override
     public void comer() {
-        this.comer("plantinhas do lago");
+        this.comer("plantas saborosas");
     }
 
-    
+
     @Override
     public void emitirSom() {
-        IO.println(getNome() + " está grasnando");
+        IO.println(getNome() + " está fazendo Quack");
     }
-    
+
 
     @Override
     public void voar() {
-        IO.println(this.getNome() + " está voando em migração para o Sul!");
+        IO.println(this.getNome() + " está voando!");
     }
 
     @Override
     public void nadar() {
-        IO.println(this.getNome() + " está nadando elegantemente!");
+        IO.println(this.getNome() + " está nadando na lagoa!");
     }
 
     @Override
     public void correr() {
-        IO.println(this.getNome() + " está correndo todo atrapalhado!");
+        IO.println(this.getNome() + " está correndo engraçado!");
     }
 
 }

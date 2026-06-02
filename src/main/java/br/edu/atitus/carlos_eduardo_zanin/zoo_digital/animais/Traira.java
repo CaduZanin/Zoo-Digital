@@ -1,10 +1,10 @@
 package br.edu.atitus.carlos_eduardo_zanin.zoo_digital.animais;
 
-
-import br.edu.atitus.carlos_eduardo_zanin.zoo_digital.comportamentos.Nado;
+import br.edu.atitus.carlos_eduardo_zanin.zoo_digital.comportamentos.Predacao;
 import br.edu.atitus.carlos_eduardo_zanin.zoo_digital.especies.Peixe;
+import br.edu.atitus.carlos_eduardo_zanin.zoo_digital.comportamentos.Nado;
 
-public class Traira extends Peixe implements Nado {
+public class Traira extends Peixe implements Nado, Predacao {
 
     public Traira(String nome, int idade) {
         super(nome, idade, "Doce");
@@ -24,5 +24,10 @@ public class Traira extends Peixe implements Nado {
     public void nadar() {
         IO.println(getNome() + " está nadando no rio");
     }
-    
+
+    @Override
+    public void cacar() {
+        IO.println(this.getNome() + " está caçando lambaris no rio!");
+    }
+
 }

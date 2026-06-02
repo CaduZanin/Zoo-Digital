@@ -1,4 +1,4 @@
 package br.edu.atitus.carlos_eduardo_zanin.zoo_digital.comportamentos;
-
-public interface Predação {
+public interface Predacao {
+    void cacar();
 }

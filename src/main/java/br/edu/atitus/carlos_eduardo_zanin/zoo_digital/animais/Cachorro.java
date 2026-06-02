@@ -12,12 +12,12 @@ public final class Cachorro extends Mamifero implements Corrida, Nado, Predacao 
 
     @Override
     public void comer() {
-        this.comer("a sua comida");
+        this.comer("ração");
     }
 
     @Override
     public void emitirSom() {
-        IO.println(this.getNome() + " está latindo!");
+        IO.println(this.getNome() + " está latindo alto!");
     }
 
     @Override
